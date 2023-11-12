@@ -31,7 +31,7 @@
 <meta property="og:description" content="这是笔者公选课《游戏程序设计基础》的作业，一个对解谜游戏和编程学习结合的设想（部分灵感来源：幽默之CV工程师超级小桀玩《i hate this game》）       在这个demo中，player需要阅读两块路牌中的信息，特别是第二块记录了箱子类定义的信息：   12345678class box &#123;  def _init_(self):    self.contain &#x3D; [ ]">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-12T07:47:58.000Z">
-<meta property="article:modified_time" content="2023-11-12T13:00:21.700Z">
+<meta property="article:modified_time" content="2023-11-12T13:06:33.382Z">
 <meta property="article:author" content="Deneb">
 <meta property="article:tag" content="unity2d">
 <meta property="article:tag" content="homework">
@@ -203,7 +203,7 @@ width="850" height="535" src="//player.bilibili.com/player.html?aid=920772882&bv
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class box &#123;</span><br><span class="line">  def _init_(self):</span><br><span class="line">    self.contain = [ ]  </span><br><span class="line">    self.opened = false </span><br><span class="line">  def open(self):</span><br><span class="line">    self.opened = true  &#125;</span><br><span class="line">the_box = box()</span><br><span class="line">the_box.contain.append(key)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <blockquote>
-<p>这段代码用python实现定义了一个box类，并创建了一个游戏里箱子的实例（就是玩家面前的箱子。）对于box类玩家首先需要阅读出它有两个Globle Attribute：contain属性用列表的形式储存box的内容物，而opened属性默认为关闭。玩家要做的就是先调用open（）的方法打开箱子，并用python中列表的“[__]”方法来访问箱子中的钥匙以通过这个场景。</p>
+<p>这段代码用python实现定义了一个box类，并创建了一个游戏里箱子的instance（就是玩家面前的箱子。）对于box类玩家首先需要阅读出它有两个Class Attribute：contain属性用列表的形式储存box的内容物，而opened属性默认为关闭。玩家要做的就是先调用open（）的方法打开箱子，并用python中列表的“[__]”方法来访问箱子中的钥匙以通过这个场景。</p>
 </blockquote>
 </blockquote>
 <hr>
